@@ -16,7 +16,6 @@ export const bookTour = async (tourId) => {
       showAlert('error', 'Something went wrong while booking the tour');
     }
   } catch (err) {
-    console.log(err);
     showAlert('error', err.response?.data?.message || 'Could not book tour');
   }
 };
